@@ -27,6 +27,10 @@ public class SwapArraySides {
 
         recursiveInvertArray(array, 0);
         System.out.println(Arrays.toString(array));
+
+        int[] array1 = new int[]{1, 2, 3};
+        invertArrayInReverseOrder(array1);
+        System.out.println(Arrays.toString(array1));
     }
 
     private static void recursiveInvertArray(int[] array, int i) {
@@ -37,6 +41,17 @@ public class SwapArraySides {
             array[endIndex] = tmp;
 
             recursiveInvertArray(array, i + 1);
+        }
+    }
+
+    //    сделать так, чтобы шел от середины к нулю
+//    ибо сравнение с нулем медленнее, чем с произвольным числом
+    private static void invertArrayInReverseOrder(int[] array) {
+        for (int i = array.length / 2; i >= 0; i--) {
+            int tmp = array[i];
+            final int endIndex = array.length - 1 - i;
+            array[i] = array[endIndex];
+            array[endIndex] = tmp;
         }
     }
 
