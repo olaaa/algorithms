@@ -3,9 +3,6 @@ package com.company;
 public class NestedLoopDiagonal {
     public static void main(String[] args) {
         printMatrix();
-
-//        int[] array = new int[]{5, 1, 3, 4, 0, 8, 9, 7, 6, 2};
-//        System.out.println(Arrays.toString(array));
     }
 
     //        декартово проиведение выглядит как двойной вложенный цикл
