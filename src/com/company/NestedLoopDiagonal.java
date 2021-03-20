@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Arrays;
-
 public class NestedLoopDiagonal {
     public static void main(String[] args) {
         printMatrix();
